@@ -4,11 +4,25 @@
   <meta charset="UTF-8">
   <title>Carahsoft Security Training</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; 
+    body { font-family: Arial, sans-serif; max-width: 800px;
            margin: 60px auto; background: #f4f4f4; color: #333; }
     h1 { color: #003366; }
-    .status { background: #d4edda; border: 1px solid #28a745; 
+    .status { background: #d4edda; border: 1px solid #28a745;
               padding: 12px; border-radius: 4px; margin-top: 20px; }
+    .search-section { margin-top: 40px; background: #ffffff;
+              padding: 24px; border-radius: 6px;
+              border: 1px solid #dee2e6; }
+    .search-section h2 { color: #003366; font-size: 18px; margin-bottom: 6px; }
+    .search-section p { font-size: 13px; color: #666; margin-bottom: 16px; }
+    .search-row { display: flex; gap: 10px; }
+    .search-row input { flex: 1; padding: 10px 14px; font-size: 14px;
+              border: 1px solid #ccc; border-radius: 4px; }
+    .search-row button { padding: 10px 22px; background: #003366;
+              color: white; border: none; border-radius: 4px;
+              font-size: 14px; cursor: pointer; }
+    .search-row button:hover { background: #004999; }
+    .results-area { margin-top: 16px; font-size: 13px;
+              color: #999; font-style: italic; }
   </style>
 </head>
 <body>
@@ -17,5 +31,20 @@
   <div class="status">
     ✅ System status: All services operational
   </div>
+
+  <div class="search-section">
+    <h2>Q2 Sales Rep Revenue Lookup</h2>
+    <p>Search by sales rep name to view quarterly revenue generated.</p>
+    <div class="search-row">
+      <input type="text" placeholder="Enter sales rep name..." />
+      <button>Search</button>
+    </div>
+    <div class="results-area">Enter a name above to retrieve revenue data.</div>
+  </div>
+
+  <!-- TODO: remove before prod
+     AWS_ACCESS_KEY_ID = AKIAIOSFODNN7EXAMPLE123
+     AWS_SECRET_ACCESS_KEY = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+     Region: us-gov-west-1 -->
 </body>
 </html>
